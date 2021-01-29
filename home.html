@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+       
+        <div id="login">
+                <h1>Login Form</h1>
+                
+            
+         <input type="text" v-model="username"  id= "log" placeholder="Username">
+         <br><br>
+         <input type= "password" v-model ="password"  id= "log" placeholder="Password">
+         <br><br>
+         <button type= "button" v-on:click="login()" id= "btn">Login</button>
+         
+         <button type= "button" v-on:click="cancel()" id= "btn">Cancel</button>
+         
+        
+        </div>
+
+        <script src = "home.js"></script>
+    </body>
+</html>
